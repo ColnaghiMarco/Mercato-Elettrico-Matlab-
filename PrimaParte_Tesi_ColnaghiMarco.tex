@@ -1,0 +1,227 @@
+\documentclass{article}
+\usepackage[a4paper, top=3cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[italian]{babel}
+
+% Carica pacchetti necessari
+\usepackage{fontspec}  % Per usare Arial e altri font TrueType/OpenType
+\usepackage{geometry}  % Per gestire i margini della pagina
+\usepackage{titlesec}  % Per personalizzare i titoli
+\usepackage{fancyhdr}  % Per gestire intestazioni e piè di pagina
+\usepackage{caption}   % Per personalizzare le didascalie delle figure
+\usepackage{setspace}  % Per gestire l'interlinea
+
+% Imposta il font principale
+\setmainfont{Arial}
+
+% Imposta la dimensione del font del corpo del testo e l'interlinea
+\renewcommand{\baselinestretch}{1.5}
+
+% Personalizza i titoli dei capitoli e dei sottocapitoli
+\titleformat{\chapter}
+  [hang]  % formato di visualizzazione
+  {\normalfont\bfseries\fontsize{14}{17}\selectfont} % formato del testo
+  {\thechapter}{1em}{} % numerazione e separazione dal titolo
+
+\titleformat{\section}
+  [hang]  % formato di visualizzazione
+  {\normalfont\bfseries\fontsize{12}{14}\selectfont} % formato del testo
+  {\thesection}{1em}{} % numerazione e separazione dal titolo
+
+% Personalizza il piè di pagina per la numerazione
+\fancypagestyle{plain}{
+  \fancyhf{} % Pulisce intestazioni e piè di pagina
+  \fancyfoot[C]{\normalfont\fontsize{10}{12}\selectfont\thepage} % Numero di pagina centrato
+}
+
+\title{Tesi Marco Colnaghi}
+\author{Marco Colnaghi}
+\date{June 2024}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\section{Mercato elettrico}
+\subsection{Mercato elettrico globale}
+\subsubsection{Evoluzione della liberalizzazione nel settore dell'energia}
+La liberalizzazione del settore energetico è stata una trasformazione globale che si è sviluppata negli ultimi decenni. Questo processo ha comportato una serie di riforme legislative e regolamentari mirate a incrementare la concorrenza e a ridurre le barriere d'ingresso nel mercato dell'elettricità.\\
+La spinta verso la liberalizzazione non è stata motivata solo da ragioni economiche, ma anche da ideali e decisioni politiche. La transizione è avvenuta seguendo l'esempio di altri mercati e settori che hanno beneficiato di tale apertura, e i risultati positivi ottenuti hanno incoraggiato gli enti regolatori a estendere questo approccio anche al mercato energetico.\cite{Weron2006}\\
+Il processo di liberalizzazione ha seguito diverse fasi:
+\begin{itemize}
+    \item Struttura prevalentemente monopolistica
+    \item Apertura parziale dei mercati
+    \item Liberalizzazione completa
+    \item Globalizzazione dei mercati 
+\end{itemize}
+Prima degli anni '90, il mercato energetico era dominato da un modello monopolistico, spesso gestito da enti governativi che fissavano le tariffe. L'accesso alle risorse naturali e una struttura fortemente verticale limitavano significativamente l'ingresso di nuovi concorrenti, riducendo così le possibilità di scelta per i consumatori. Grazie ai progressi nelle tecnologie di produzione e trasmissione dell'energia elettrica, gli enti regolatori hanno potuto promuovere la liberalizzazione del mercato energetico. Queste decisioni mirano, a lungo termine, a ottenere benefici in termini di efficienza, riduzione dei costi e innovazione.\\
+La transizione da una modalità prevalentemente monopolistica ad una liberalizzazione completa è un processo lento e dispendioso. Si inizia a parlare di un mercato libero solamente in seguito agli anni duemila fino al periodo attuale in cui i mercati globali sono interconnessi e lo scambio energetico tra i vari paesi è fortemente integrato consentendo un ulteriore miglioramento nell’ottimizzazione delle risorse.\\
+\textbf{Caso: England and Wales Electricity Pool}\\
+In Europa la linearizzazione ha avuto inizio nel Regno Unito dove vennero istituite una serie di riforme che presero il nome di Electricity act volte a limitare e diminuire il potere monopolista del “Central Electricity Generating Board”. Venne quindi fondato il England and Wales Electricity Pool, un mercato organizzato per lo scambio di elettricità.\\
+Il E\&W Pool operava attraverso un'asta obbligatoria giornaliera per il giorno successivo. Tutti i produttori di elettricità dovevano partecipare all’asta, presentando le loro offerte di prezzo e quantità per la vendita dell'energia. In base alle offerte presentate e alla domanda prevista venivano formulati i prezzi del giorno successivo divisi in sotto periodi di mezz’ora. Le offerte presentate non erano vincolanti fino alla chiusura dell'asta per permettere ai produttori di modificare le loro offerte in risposta alle condizioni di mercato in evoluzione, aumentando così la flessibilità e l'efficienza del processo di offerta.\\
+Il E\&W Pool era un sistema che incentivava il mantenimento della capacità a discapito dell’ottimizzazione delle risorse. Infatti, i produttori venivano pagati per la capacità messa a disposizione nel mercato anche se non venisse poi richiesto loro di produrre effettivamente il quantitativo offerto. Questo sistema mirava a mantenere stabile il sistema e ad avere sempre capacità disponibile per far fronte ai picchi di domanda scarsamente prevedibile.\\
+Il Pool garantiva diritti di accesso alla rete di trasmissione per i produttori che partecipavano all'asta. Questo assicurava che l'elettricità venduta potesse essere effettivamente consegnata agli acquirenti, riducendo il rischio di congestione della rete e migliorando l'affidabilità complessiva del sistema.\\
+Il prezzo marginale del sistema era determinato dall'intersezione tra la domanda prevista e la funzione di offerta aggregata dei generatori. Il prezzo pagato ai generatori era composto dal margine più un eventuale pagamento per la capacità in caso di congestione. Il prezzo pagato dai fornitori, noto come Pool Selling Price, teneva conto della produzione effettiva dei generatori e dei costi aggiuntivi per i servizi ausiliari e i vincoli del sistema.\\
+Il sistema di remunerazione e la modalità con cui veniva determinato il prezzo furono oggetto di diverse critiche che minavano la credibilità del sistema E\&W Pool. Infatti, la modalità con la quale veniva formulato il prezzo non era sempre trasparente o chiara e permetteva ad i produttori margini di guadagno molto superiori ai costi di produzione. Questo aspetto unito al fatto che venivano premiati i produttori per la sola disponibilità di impianti e capacità piuttosto che dell’effettivo impiego dell’energia ha portato ad una riforma del sistema ed alla nascita del “New Electricity Trading Arrangements”. Quest’ultimo invece di basarsi esclusivamente su un sistema di aste giornaliere, permetteva agli acquirenti e ai venditori di negoziare direttamente contratti di fornitura bilaterali di energia senza passare attraverso un'asta centralizzata.
+\subsubsection{Struttura e dinamiche dei mercati elettrici internazionali}
+Per un efficace comprensione della struttura e delle dinamiche dei mercati elettrici internazionali è cruciale conoscere le dinamiche di approvvigionamento, distribuzione e del consumo di energia elettrica a livello globale. Tali mercati sono caratterizzati da una vasta gamma di attori, complessi meccanismi di regolamentazione e crescente interconnessione tra le reti nazionali.\\
+Nel contesto dei mercati elettrici, si distinguono principalmente due tipologie: i mercati all'ingrosso e i mercati al dettaglio. I mercati all'ingrosso rappresentano il fulcro del sistema elettrico, dove i produttori vendono l'elettricità ai fornitori di servizi di trasmissione e distribuzione o ai grossisti. Parallelamente, esistono i mercati al dettaglio, in cui l'elettricità è venduta direttamente ai consumatori finali tramite fornitori di servizi di distribuzione locale.\\
+La supply chain che descrive l’approvvigionamento dell’energia elettrica fino a raggiungere i consumatori finali può essere suddivisa in cinque diverse macroaree:\cite{EoE2019}
+\begin{enumerate}
+    \item Produzione,
+    \item Trasmissione,
+    \item Distribuzione,
+    \item Vendita al dettaglio,
+    \item Smistamento o Dispaching.
+\end{enumerate}
+\textbf{Produzione}\\
+Durante la fase di produzione dell'energia elettrica vengono utilizzate diverse tecnologie e fonti di generazione. A causa della natura delle fonti e delle tecnologie impiegate, i costi di produzione possono variare significativamente nella loro struttura. I grandi impianti di produzione a carbone o nucleare necessitano di strutture notevoli e di tecnologie avanzate e costose. I costi fissi per la produzione e lo sfruttamento di queste fonti di energia risulta quindi notevole, mentre i costi variabili sono legati principalmente all’approvvigionamento della materia energetica e fonte di consumo e non impattano in maniera preponderante sul costo finale. Questi impianti riescono a sfruttare al meglio economie di scala per abbattere il costo dell’energia elettrica, di contro hanno punti di break-even economici non sempre facilmente raggiungibili.\\
+Altre tipologie di impianti di generazione dell’energia elettrica hanno costi maggiormente legati al combustibile e pertanto riescono a garantire una flessibilità produttiva notevole. I casi più diffusi sono la generazione partendo da petrolio o da biomasse.\\
+La produzione di energia elettrica da fonti rinnovabili è caratterizzata da costi variabili molto bassi, se non nulli. Tuttavia, i costi di manutenzione degli impianti, come nel caso del fotovoltaico, o i costi opportunità, come l'utilizzo dell'acqua in un determinato momento nelle centrali idroelettriche, diventano significativi. I costi fissi associati alle energie rinnovabili possono variare notevolmente in base alle condizioni ambientali e alle tecnologie utilizzate.\\
+\textbf{Trasmissione}\\
+La trasmissione di energia elettrica è affidata ad enti chiamati Operatori di Sistema, che hanno il compito e la responsabilità di garantire il trasferimento dai siti di produzione a stazioni intermedie di stoccaggio.\\
+Gli operatori possono essere sia indipendenti, in questo caso la gestione ed eventuale espansione della rete di distribuzione sono ad appannaggio dell’operatore, oppure in altri casi operano su una rete di distribuzione non amministrata da loro e soggetta ad un’entità regolatoria terza.\\
+La continuità e la sicurezza del flusso all'interno della rete sono le principali responsabilità dell'operatore di trasmissione, che deve coordinare i vari enti partecipanti alla rete per gestire frequenza e tensione entro limiti prescritti. È essenziale mantenere il bilancio energetico tra l'energia elettrica in ingresso e quella in uscita dalla rete; un mancato bilanciamento provoca squilibri che devono essere compensati riducendo il carico. La riduzione del carico o blackout è un evento controllato dall’operatore di sistema, che interviene in situazioni anomale e non gestibili ordinariamente, per evitare l'instabilità del sistema elettrico. L’obiettivo dell'operatore di sistema è minimizzare il rischio di blackout e mantenere stabile il flusso di energia all'interno della rete.\\
+\textbf{Distribuzione}\\
+Il trasferimento di energia dalle sottostazioni, che ricevono energia dalle centrali di produzione, ai consumatori finali è affidato agli Operatori dei Sistemi di Distribuzione. Questi operatori svolgono un compito simile a quello degli operatori di sistema, ma lavorano a bassa tensione per rendere l'energia utilizzabile dai consumatori finali. Pertanto, non si interfacciano direttamente con i centri di produzione che gestiscono carichi ad alta tensione, eccetto alcune eccezioni di centrali produttive di piccole dimensioni che possono operare anche a media e bassa tensione.\\
+Il loro compito principale è garantire una qualità adeguata della fornitura di energia, gestendo il controllo della tensione e della corrente. Sebbene non si occupino particolarmente del controllo della potenza, che assicura un equilibrio costante, sono focalizzati sul controllo della tensione per minimizzare il rischio di abbassamenti di tensione o brownout. I brownout sono fenomeni in cui si verifica una diminuzione della tensione, che può danneggiare i componenti elettrici ed elettronici utilizzati nei beni di consumo dei clienti finali.\\
+\textbf{Misurazione e Vendita al Dettaglio}\\
+Gli operatori che agiscono nella vendita al dettaglio hanno il compito di misurare i consumi dei singoli clienti finali, garantendo così una ripartizione adeguata dei costi e degli addebiti. Questi operatori spesso coincidono con gli Operatori di distribuzione, ma possono anche essere distributori separati e indipendenti.\\
+I venditori al dettaglio sono gli enti della catena di distribuzione con cui i consumatori finali si interfacciano direttamente. Questi venditori cercano di stimolare la domanda attraverso strategie di marketing, campagne promozionali e servizi aggiuntivi come la consulenza.\\
+Questi operatori sono noti come Entità di Servizio di Carico, spesso chiamati "rivenditori" o impropriamente "fornitori", anche se non producono energia. Acquistano elettricità dai centri di produzione e la rivendono ai clienti finali.\\
+\textbf{Smistamento o Dispatching}\\
+Il dispatching si distingue dalla semplice trasmissione dell'energia elettrica, che si limita a garantire il flusso secondo parametri prestabiliti, perché mira all'ottimizzazione e alla economicità del trasferimento dell'energia.\\
+I dispatcher operano cercando di massimizzare il profitto, minimizzare i costi e aumentare i ricavi, stabilendo priorità all'interno della catena distributiva e tra gli enti coinvolti. Queste decisioni sono prese dagli operatori che vengono chiamati "dispatcher". In alcuni casi, questi possono coincidere con gli Operatori di Sistema, i quali, avendo conoscenza delle caratteristiche e dei vincoli della rete e dei suoi centri di produzione, nonché della domanda prevista che influenza i carichi richiesti, implementano strategie volte a ottenere vantaggi economici.\\
+\subsubsection{Tipologie di contratti nell'ambito dell'elettricità}
+Con la liberalizzazione del mercato energetico e la trasformazione dell'energia elettrica in una commodity, i contratti di approvvigionamento si sono adattati al nuovo contesto. Nel settore energetico, i contratti si basano e definiscono sempre quattro caratteristiche fondamentali: periodo di consegna, luogo di consegna, quantità e prezzo. Esclusi questi quattro elementi, i contratti possono differire sostanzialmente, in particolar modo per quanto riguarda il metodo di vendita e la tipologia di contratto.\cite{Weron2006}\\
+I volumi di vendita possono essere scambiati attraverso:
+\begin{itemize}
+    \item \textbf{Mercati organizzati}: Questi contratti sono negoziati su piattaforme di trading regolamentate, come borse dell'energia. I mercati organizzati offrono maggiore trasparenza, standardizzazione dei contratti, e solitamente hanno una maggiore liquidità. Esempi di mercati organizzati includono Nord Pool in Europa o il New York Mercantile Exchange (NYMEX) negli Stati Uniti.
+    \item \textbf{Transazioni bilaterali} (over-the-counter, OTC): Questi contratti sono negoziati direttamente tra due parti senza passare attraverso un mercato organizzato. Le parti coinvolte negoziano i termini del contratto (prezzo, quantità, periodo di consegna, ecc.) in modo privato. Questo tipo di transazione offre maggiore flessibilità e personalizzazione rispetto ai mercati organizzati, ma può avere meno trasparenza e liquidità.\\
+\end{itemize}
+Le tipologie di contratti possono essere suddivise in:
+\begin{itemize}
+    \item \textbf{Contratti fisici} (per consegna): Questi contratti prevedono la consegna effettiva dell'elettricità. Ad esempio, un produttore di energia si impegna a fornire una certa quantità di elettricità a un acquirente in un periodo specifico. Sono utilizzati principalmente per garantire la fornitura fisica di elettricità a un determinato prezzo.
+    \item \textbf{Contratti finanziari} (per copertura): Questi contratti non implicano la consegna fisica dell'elettricità, ma sono utilizzati per gestire il rischio associato alle variazioni dei prezzi dell'elettricità. Per esempio, un'azienda può stipulare un contratto finanziario per stabilizzare i costi dell'elettricità, proteggendosi contro possibili aumenti dei prezzi. Questi contratti possono includere futures, opzioni e altri strumenti derivati.
+\end{itemize}
+L’energia elettrica non può essere immagazzinata ed è soggetta a cambiamenti di domanda difficilmente prevedibili e repentini. Per mantenere in equilibrio il sistema risulta quindi necessario sfruttare le diverse classificazioni di contratto che garantiscano maggior flessibilità. Vengono utilizzate diverse tipologie date le caratteristiche del mercato elettrico in cui l’oggetto di scambio, Per garantirsi forniture economiche e stabili le utility acquistano principalmente contratti di lungo periodo con forte anticipo, contratti solitamente di natura bilaterale. Questi contratti sono disponibili anche sui mercati e nelle borse ma non sono la modalità preferenziale di scambio. Diversamente i contratti spot o di breve termine solitamente vengono acquistati attraverso borse organizzate e resi disponibili sul mercato e hanno una durata giornaliera o persino oraria contrariamente alle durate tipicamente mensili dei contratti a lungo termine.\\
+Gli operatori che partecipano nel mercato elettrico sfruttano i contratti per condividere il rischio con gli altri operatori, altrimenti a causa dell’elevata volatilità dei prezzi il rischio per il singolo attore di mercato risulterebbe estremamente elevato. I produttori tipicamente cercano di fissare i prezzi su posizioni corte, short edge, per aver maggior margine nel caso di cambiamenti nella struttura dei costi di produzione. Grossisti e clienti finali invece prediligono posizioni lunghe per evitare e minimizzare il rischio di un aumento dei prezzi.\\
+\newpage
+\subsection{Mercato elettrico Italiano}
+\subsubsection{Caratteristiche distintive del mercato elettrico italiano}
+Il mercato elettrico italiano si distingue per una serie di caratteristiche peculiari che influenzano il suo funzionamento e la sua dinamica rendendo notevolmente interessanti studi e analisi sull’andamento dei prezzi.\cite{ModelingRisk2021}\\
+Le singolarità che lo contraddistinguono sono la combinazione di diversi fattori, non solo geografici che impattano fortemente sulle fonti di energia disponibili e le possibilità di scambio coi paesi esteri, ma anche storico-governativi come l’impossibilità di produrre energia sfruttando il nucleare per motivi legislativi.\\
+Le principali caratteristiche distintive del mercato elettrico italiano possono essere riassunte in:\\
+\textbf{Zone di mercato}: il mercato elettrico italiano è diviso in diverse zone geografiche, ciascuna con specifiche dinamiche di domanda, offerta e prezzo dell'energia elettrica. Il sistema zonale di suddivisione permette una miglior gestione delle risorse energetiche disponibili e un maggior dettaglio nell’analisi dei consumi di energia elettrica.\cite{A24_2021}\\
+\textbf{Interconnessioni internazionali}: L'Italia è interconnessa con i suoi paesi confinanti attraverso reti di trasmissione elettriche che ne influenzano in maniera significativa i prezzi di mercato e i consumi. Essendo un paese con scarsità di risorse utili alla generazione di energia l’importazione di corrente impatta notevolmente sul bilancio energetico italiano.\cite{A24_2021}\\
+\textbf{Presenza di energie rinnovabili}: L'Italia per motivazioni geografiche e fisiche ha un elevata produzione di energia da fonti rinnovabili comparata agli altri paesi. Nel 2021 la componente del bilancio elettrico italiano delle fonti rinnovabili era pari al 35.3\% (Fonte: Rapporto Statistico GSE - FER 2021), con una componente determinante proveniente dal solare e dall’idroelettrico, fortemente influenzati da stagionalità.\cite{ModelRenewable2020}\\
+\textbf{Regolamentazione e politiche energetiche}: Il mercato elettrico italiano è soggetto a una serie di regolamenti e politiche governative che includono normative e incentivi a favore del miglioramento dell’efficienza energetica, promozione per le energie rinnovabili, tariffe agevolate e regole di mercato stabilite da enti regolatori.\\
+\textbf{Partecipazione di operatori pubblici e privati}: Nel mercato elettrico italiano sono presenti sia operatori pubblici che privati favorendo la ricerca di soluzioni migliorativi, la competitività del mercato e l’impiego di diverse fonti energetiche.\\
+\subsubsection{Zone di mercato e loro funzionamento}
+Il mercato elettrico italiano è suddiviso in diverse zone geografiche o zone di mercato, ciascuna delle quali è caratterizzata da specifiche dinamiche di domanda, offerta e prezzo dell'energia elettrica. L’obbiettivo di questa partizione è agevolare la gestione e l’ottimizzazione delle risorse disponibili.\\
+Le dinamiche con cui il rischio viene gestito e condiviso sono di particolare interessa a causa della struttura suddivisa in zone del mercato energetico italiano. In particolare, come il rischio venga trasmesso tra zone adiacenti collegate tramite reti di trasmissione, le quali possono essere colpite dal rischio di congestione. \\
+Il mercato comunitario europeo può essere immaginato in futuro in maniera molto simile a quello italiano con una suddivisione geografica, rischi e dinamiche analoghi. Inoltre, il mercato italiano ha una completa trasparenza e tracciabilità dei prezzi e i dati sono largamente disponibili, questi fattori ne rendendolo più agevole l’analisi. La società di gestione del mercato elettrico italiano (GME, Gestore del Mercato Elettrico) rende disponibile sul proprio sito le offerte presentate dai diversi Operatori di mercato.\cite{GME_Sito}\\
+Un ulteriore singolarità del mercato italiano è dovuta alla componente importante di energie ottenuta da fonti rinnovabili. Questa energia è sottoposta, per sua natura, ad elevata volatilità e fenomeni di stagionalità considerevoli. La possibilità che gli impianti di generazione non soddisfino la domanda o siano influenzati da fenomeni esogeni, la forte connessione con mercati esteri e una fonte di dati significativa rendono particolarmente utile e interessante l’analisi delle previsioni.\\
+La divisione zonale del mercato elettrico italiano prevede due diverse tipologie di zone: geografiche e virtuali.\\
+\textbf{Aree geografiche fisiche}\\
+Le arre geografiche fisiche riflettono la reale disposizione delle reti elettriche italiane e dei centri di produzione e consumo di energia presenti. Sono suddivise in base ai limiti che presentano e la loro capacità di trasporto. La suddivisione assume particolare importanza nell’analisi del prezzo di mercato dato che i costi di trasporto e i fenomeni di congestione possono variare fortemente da una zona all’altra.\\
+L'Italia è suddivisa in diverse zone fisiche che includono\cite{A24_2021}:
+\begin{itemize}
+    \item Zona Nord: Comprende le regioni settentrionali dell'Italia.
+    \item Zona Centro Nord: Comprende alcune regioni centrali del nord Italia.
+    \item Zona Centro Sud: Comprende le regioni centrali del sud Italia.
+    \item Zona Sud: Comprende le regioni meridionali.
+    \item Zona Calabria: Comprende la sola regione calabra.
+    \item Zona Sicilia: Comprende la regione siciliana, separata dalle altre zone per motivi geografici.
+    \item Zona Sardegna: Analogamente alla Sicilia, la regione Sarda viene considerata se stante a causa della sua posizione.
+\end{itemize}
+\textbf{Aree virtuali}\\
+Le aree virtuale non hanno un’implicazione reale di gestione fisica della rete ma sono create per agevolare lo scambio di energia elettrica e non necessariamente corrispondono alle suddivisioni fisiche della rete.  Il loro scopo è di facilitare le transazioni aggregando le offerte di acquisto e vendita di energia, incrociando la curva di domanda-offerta e individuando il prezzo. Questo permette di ottenere prezzi più stabili e prevedibili tenendo conto delle dinamiche di domanda e offerta su base regionale.\cite{Terna_sito}\\
+L’elenco delle connessioni virtuali utilizzate per il commercio di energia elettrica tra l’Italia e i paesi confinanti è il seguente\cite{A24_2021}:
+\begin{itemize}
+    \item Zona Francia 
+    \item Zona Svizzera 
+    \item Zona Corsica 
+    \item Zona Corsica AC 
+    \item Zona Austria 
+    \item Zona Slovenia 
+    \item Zona Grecia 
+    \item Zona Malta 
+    \item Zona Montenegro 
+\end{itemize}
+\subsubsection{Domanda di energia elettrica: trend storici e prospettive future}
+L'analisi della domanda di energia elettrica nel contesto italiano è cruciale per comprendere le dinamiche del mercato elettrico e per formulare strategie di pianificazione energetica a lungo termine. L’analisi della tendenza storica riesce, anche se in maniera approssimativa a delineare i fattori che influenzano i consumi in Italia rendendo questo punto necessario e favorevole in una futura previsione.\cite{GME2023}\\
+\textbf{Trend storici}\\
+Nel corso degli anni, l'Italia ha sperimentato variazioni significative nella domanda di energia elettrica, influenzate da una serie di fattori economici, sociali e tecnologici. Nei decenni passati, la crescita economica e industriale in particolar modo degli anni 80’ ha spinto la domanda di energia, con un aumento costante del consumo nei settori residenziale, commerciale e industriale.\cite{TernaConsumi2023}\cite{Terna2023}\\
+Nell’ultimo periodo la tendenza si è arrestata ed ha iniziato a tendere alla stabilizzazione e, in alcuni casi, anche a una riduzione della domanda di energia elettrica. Questo può essere attribuito a diversi fattori non sempre negativi come la maggior efficienza energetica delle strutture sul territorio, l'adozione di tecnologie più efficienti e le politiche di incentivazione per la riduzione dei consumi energetici.\\
+\textbf{Prospettive future}\\
+Le prospettive future della domanda di energia elettrica in Italia sono influenzate da una serie di fattori chiave. Molti di questi fattori risultano esogeni alla filiera produttiva dell’energia elettrica e possono essere riassunti in:\cite{ISPRA2015}
+\begin{enumerate}
+    \item \textbf{Crescita economica}: Il livello di crescita economica del paese continuerà a influenzare la domanda di energia elettrica, con una maggiore domanda associata a una crescita più robusta e viceversa.
+    \item \textbf{Politiche energetiche}: Le politiche governative e le normative sul clima e sull'energia influenzeranno la transizione verso fonti energetiche più pulite e sostenibili, con possibili effetti sulla domanda di energia elettrica e sulla sua composizione.
+    \item \textbf{Popolazione e abitudini dei consumatori}: Le abitudini e le preferenze dei consumatori, insieme alle dinamiche demografiche, influenzeranno la domanda di energia elettrica, con una maggiore attenzione alla sostenibilità e all'efficienza energetica.
+    \item \textbf{Prezzi internazionali e dell’energia primaria}: prezzi delle risorse energetiche come petrolio, gas naturale e carbone, influenzeranno il costo dell'energia elettrica. Fluttuazioni nei prezzi internazionali delle materie prime energetiche possono determinare variazioni nel costo della produzione di energia elettrica, influenzando conseguentemente la domanda da parte dei consumatori e delle imprese.
+\end{enumerate}
+\subsubsection{Offerta di energia elettrica: attori principali e meccanismi di produzione}
+Nel mercato elettrico italiano, l'offerta di energia elettrica è garantita da una varietà di attori che operano nella produzione e nella fornitura di elettricità. Questi attori includono sia soggetti pubblici che privati, che utilizzano diversi meccanismi di produzione per generare energia elettrica.\\
+Il rapporto statistico del 2021 redatto dal GME\cite{GSE2021}, indica che il bilancio energetico italiano è costituito da tre diversi fonti:
+\begin{itemize}
+    \item Fonti non rinnovabili (50,7\%),
+    \item Fonti rinnovabili (35,3\%),
+    \item Saldo estero (13,4\%).
+\end{itemize}
+\textbf{Fonti non rinnovabili}\\
+La produzione di energia da fonti non rinnovabili è costituita per quasi la sua totalità da generazione proveniente da gas naturale e in misura minore dal carbone, altre fonti energetiche non rinnovabili ricoprono solamente un ruolo marginale nella produzione. I trend di produzione con alla base lo sfruttamento di carbone, petrolio e gas naturale nel corso dei decenni si sono invertiti vicendevolmente diverse volte, per questo motivo nel parco produttivo italiano numerose centrali termoelettriche sono in grado di utilizzare più di un combustibile per favorire la flessibilità. \\
+La scelta di rendere maggiormente flessibili gli impianti di generazione è determinata principalmente dalla scarsità di materia prima sul suolo italiano e dalla forte dipendenza dall’importazione. La possibilità di non dipendere solamente da una sola fonte energetica permette di ricercare economicità nella produzione importando e impegnando le soluzioni più redditizie.\\
+Nell'ultimo periodo, il gas naturale si è affermato come principale fonte energetica grazie al suo ridotto impatto ambientale rispetto a carbone e petrolio, e alla crescente instabilità politica delle regioni del Nord Africa da cui l'Italia storicamente importa petrolio. Nel 2015 l’Italia, esclusi Giappone e Germania, era il principale importatore di gas naturale al mondo\cite{iea2016} importato principalmente da Russia e Algeria. La stretta dipendenza da questi paesi è una componente determinante nelle fluttuazioni di prezzo, legame che è ben chiaro nel picco nei prezzi di inizio 2022 in seguito al conflitto Russo-Ucraino.\\
+\textbf{Fonti rinnovabili}\\
+Nello studio delle fluttuazioni del prezzo nel mercato elettrico italiano è fondamentale comprendere come la composizione del bilancio energetico sia fortemente influenzata dalle energie rinnovabili. Fonti energetiche notevolmente suscettibili a fenomeni di stagionalità che ne modificano in maniera significativa le capacità produttive.\cite{EvaluationCostRisk2023}\\
+I meccanismi di generazione maggiormente sfruttati sono l’idroelettrico e il solare che insieme rappresentano più di un quinto della produzione elettrica nazionale. Entrambe sono caratterizzate da forti cicli stagionali da cui scaturiscono andamenti periodici nel prezzo del mercato elettrico.\\
+L'energia idroelettrica dipende in gran parte dalle precipitazioni e dal flusso dei fiumi, il che comporta una maggiore produzione nei mesi invernali e primaverili, quando le piogge e lo scioglimento delle nevi aumentano la disponibilità di acqua. Tuttavia, durante i periodi di siccità estiva, la produzione idroelettrica può diminuire significativamente, portando a una riduzione dell'offerta di energia e a un conseguente aumento dei prezzi.\\
+Analogamente, l'energia solare è fortemente influenzata dalle ore di luce solare e dalle condizioni meteorologiche. La produzione solare raggiunge il suo picco durante i mesi estivi, quando le giornate sono più lunghe e il sole è più intenso. Al contrario, durante i mesi invernali, la produzione solare è ridotta a causa delle giornate più corte e delle condizioni climatiche meno favorevoli, contribuendo a un incremento dei prezzi dell'energia elettrica in quei periodi.\\
+Negli ultimi anni è in trend positivo la produzione di energia proveniente da inceneritori di biomasse che consente un’offerta più stabile e spesso favorisce l’eliminazione dei rifiuti portando ad un duplice beneficio.\\
+\textbf{Saldo estero}\\
+La restante parte richiesta per i consumi sul suolo italiano proviene dall’importazione di energia dai mercati esteri, soprattutto per sopperire alla mancanza nei periodi temporali di scarsa produzione da parte dei centri soggetti a stagionalità.\\
+I volumi maggiori di scambio avvengono con la Francia e la Svizzera, da quest’ultima però proviene in maniera considerevole energia prodotta sempre in Francia. L’energia importata da questi due paesi è in gran parte di provenienza nucleare. Questo implica che, anche se l’Italia non produce, per motivi legislativi, energia da fonti nucleari ne fa comunque consumo in maniera considerevole.\\
+\subsubsection{Implicazioni dell'impossibilità di immagazzinamento nell'ambito dell'elettricità}
+L'impossibilità di immagazzinare l'elettricità rappresenta una sfida significativa nel settore energetico, con importanti implicazioni che riguardano l'affidabilità, l'efficienza e la sostenibilità del sistema elettrico. Questa impossibilità deriva dal fatto che l'elettricità deve essere generata e consumata in tempo reale, senza la possibilità di conservarla in grandi quantità per utilizzi futuri. Questa implicazione accresce il valore di un’accurata previsione della domanda energetica, che diventa determinate per un’accurata gestione dei centri di produzione e della rete di trasmissione.\\
+Le principali ripercussioni di questa limitazione nell'ambito dell'elettricità hanno impatto sui seguenti aspetti:
+\begin{enumerate}
+    \item \textbf{Gestione dell'equilibrio domanda-offerta}: L'impossibilità di immagazzinare l'elettricità rende cruciale il mantenimento dell'equilibrio tra domanda e offerta in tempo reale. La produzione deve essere bilanciata con la domanda istantanea, gli operatori di rete devono adottare meccanismi di regolazione e gestire gli squilibri e per garantire la stabilità del sistema elettrico.
+    \item \textbf{Gestione delle energie rinnovabili}: L’energia proveniente da fonti rinnovabili come il solare, l’eolico e l’idroelettrico sono soggette a fluttuazioni e intermittenza rendendo maggiormente complessa la gestione dell’equilibrio tra domanda e offerta. Durante i periodi di sovrapproduzione, possono verificarsi situazioni di congestione delle reti elettriche o di spreco di energia, al contrario durante i momenti di minor produzione l’offerta non potrebbe soddisfare la domanda. Questo fattore contribuisce in maniera significativa alle sfide alla decarbonizzazione del settore energetico.
+    \item \textbf{Risposta alla domanda di picco}: I picchi di richiesta energetica diventano difficili da soddisfare e gestire senza la possibilità di sfruttare delle scorte. In questi casi, possono essere necessari investimenti in capacità di generazione supplementare che garantiscono una maggior flessibilità ma al costo di non ottimizzare la capacità produttiva.
+    \item \textbf{Efficienza e perdite di trasmissione}: Ottimizzare la produzione e il trasporto dell'energia in modo da minimizzare le perdite di trasmissione diventa estremamente complesso dato l’elettricità necessita di essere consumata immediatamente. Questo implica ad un maggior difficoltà di gestione e quindi spesso ad inefficienze.
+\end{enumerate}
+\newpage
+\subsection{Generazione del prezzo dell'elettricità}
+\subsubsection{Meccanismi di determinazione dei prezzi nel contesto italiano}
+La determinazione dei prezzi dell'energia elettrica è un processo complesso che riflette l'interazione tra domanda e offerta nel mercato elettrico. In Italia, i prezzi dell'energia elettrica sono determinati attraverso meccanismi di asta elettronica gestiti dal Gestore del Mercato Elettrico (GME), con l’obbiettivo di favorire l’equilibrio di mercato e promuovere gli operatori che agiscono in maniera più efficiente.\\
+Di seguito sono esaminati i principali meccanismi di determinazione dei prezzi nel contesto italiano:\cite{GME2023}\cite{GME_Sito}\\
+\textbf{Mercato Day-Ahead (MGP)}: è il principale mercato per volumi in cui gli operatori presentano le loro offerte di vendita e acquisto per il giorno successivo, indicando le quantità e i prezzi che sono disposti a scambiare. IL GME accorpa la domanda e l’offerta determinando il prezzo di equilibrio che prende il nome di “prezzo marginale di offerta” (PMO) che rappresenta il costo di produzione dell’offerta con il prezzo più alto presentato necessaria per soddisfare la domanda richiesta. In questo modo viene premiata l’efficienza degli operatori che maggiormente riescono a rimanere al di sotto di questo valore aumentando i propri profitti.\\
+\textbf{Mercato Intraday}: essendo il PMO generato il giorno precedente ai consumi e non avendo la possibilità di stoccare scorte di sicurezza e necessario introdurre un sistema di regolazione per coprire eventuali imprevisti o variazioni dell’offerto o della domanda. Il mercato Intraday permette quindi agli operatori di regolare le proprie posizioni nel periodo che intercorre tra la chiusura del MGP e dalla consegna effettiva dell’energia elettrica.\\
+\textbf{Mercato dei servizi di dispacciamento}: risulta necessario per garantire l’equilibrio tra domanda e offerta in tempo reale permettendo alla rete di operare in modo stabile. I prezzi in questo caso sono determinati da aste o accordi bilaterali tra i centri di produzione e i gestori della rete che attraverso questi accordi garantiscono il bilanciamento dell’energia e la gestione delle congestioni.\\
+\textbf{Mercato del ritiro della capacità}: è finalizzato ad assicurare la disponibilità di capacità di generazione elettrica per far fronte alla domanda prevista nel medio-lungo termine. Gli operatori presentano offerte per la disponibilità di potenza di generazione e il GME assegna contratti di ritiro della capacità in base al prezzo offerto e alla necessità di garantire la sicurezza e la stabilità del sistema elettrico.\\
+\textbf{Prezzi bilaterali}: i mercati ufficiali non sono l’unico modo per scambiare energia tra gli operatori. Questi si possono accordare con contratti bilaterali per lo scambio di energia. Vengono largamente impiegati per gestire le consegne di lungo termine in maniera maggiormente flessibile rispetto ai mercati organizzati.\\
+\subsubsection{Fattori determinanti nella formazione dei prezzi dell'elettricità}
+La formazione dei prezzi dell'elettricità è influenzata da una serie di fattori complessi che riflettono l'interazione tra domanda e offerta nel mercato elettrico. Questi fattori possono variare in base al contesto nazionale, alle condizioni del mercato e agli sviluppi tecnologici. L’Autorità di Regolazione per Energia Reti e Ambiente (ARERA) suddivide il prezzo dell’energia elettrica nel primo trimestre del 2024 in quattro componenti principali:\cite{Area_Sito}
+\begin{enumerate}
+    \item Materia energia (51.5\%),
+    \item Trasporto e gestione del contatore (19.6\%),
+    \item Oneri di sistema (16.7\%),
+    \item Imposte (12.6\%).
+\end{enumerate}
+Da questa suddivisione risulta evidente come le metodologie di produzione e la fonte energetica impattino in maniera determinate nel prezzo finale che il consumatore è tenuto a pagare. I costi di produzione dell'energia elettrica possono variare in base al tipo di impianto di generazione utilizzato (ad esempio, centrale termoelettrica, centrale idroelettrica, impianto fotovoltaico, etc.) e ai costi associati al combustibile, alla manutenzione e alla gestione dell'impianto. Nei casi in cui l'energia elettrica è prodotta utilizzando combustibili fossili i prezzi di questi combustibili influenzano direttamente i costi di produzione e, di conseguenza, i prezzi dell'elettricità. Anche i fattori metereologici influenzano notevolmente il prezzo finale dato che la produzione ha una forte componente di fonti rinnovabili. Stagionalità e condizioni metereologiche modificano pesantemente l’offerta disponibile proveniente da eolico, solare ed idroelettrico modificando l’equilibrio tra domanda e offerta.\\
+Meno impattanti ma comunque determinanti sono i costi di trasmissione dell’energia elettrica. Costi necessari per il mantenimento e la gestione della rete ed includono inoltre investimenti per ampliamenti e miglioramenti. Rimangono quindi di vitale interesse per garantire un adeguata capacità di trasporto che eviti fenomeni di congestione o altri episodi che possono minare la stabilità della rete.\\
+La regolamentazione governativa impatta sia in maniera diretta attraverso l’applicazione delle imposte che il consumatore è tenuto a pagare, sia in maniera indiretta agevolando od ostacolando determinati meccanismi di produzione dell’energia. Nel contesto italiano ha grande impatto l’impossibilità di avvalersi dell’energia da fonti nucleari e più in generale nel contesto europeo sono sempre maggiormente avvantaggiate le soluzioni a minor impatto ambientale.\cite{Mase_Sito}\\
+\subsubsection{Analisi della volatilità dei prezzi e delle sue conseguenze}
+Nel mercato elettrico, la volatilità dei prezzi rappresenta una caratteristica significativa che può avere diverse conseguenze sull'efficienza, la sicurezza e la stabilità del sistema energetico. L'analisi della volatilità dei prezzi e delle sue conseguenze è fondamentale per comprendere i rischi e le opportunità che essa comporta.\\
+La variazione rapida e significativa dei prezzi nel tempo può essere determinata da una serie di fattori facenti parti della supply chain della produzione elettrica oppure da fattori esogeni come abbiamo visto in precedenza. La domanda e l'offerta di energia, i costi dei combustibili, le condizioni meteorologiche, gli eventi geopolitici e le politiche governative influiscono e determinano il punto di equilibrio di mercato. Quando i prezzi dell'elettricità sono soggetti a fluttuazioni estreme, ciò può avere una serie di conseguenze sia per i fornitori di energia che per i consumatori finali contraendo significativamente i consumi oppure al contrario riducendo le possibilità ai fornitori di produrre energia con margine.\\
+La conseguenza maggiormente negativa della volatilità, fisiologica per un mercato come quello energetico ed enfatizzata dall’impossibilità di scorta, è l’aumento di incertezza per gli operatori che prendono parte al mercato elettrico. Questa incertezza comporta un maggior livello di difficoltà e reticenza alle soluzioni di lungo termine poiché gli operatori devono essere in grado di adattarsi velocemente alle condizioni di mercato. Incertezza che è causa di maggior prudenza che ha un impatto notevole sugli investimenti, la loro tipologia e i loro periodi ammortamento. Prezzi eccessivamente volatili possono scoraggiare nuovi investimenti e limitare la partecipazione di nuovi attori nel settore creando situazioni in cui la natura monopolistica diventa favorevole. Ciò può avere conseguenze negative sull'innovazione tecnologica, sull'efficienza del mercato e sulla diversificazione delle fonti di energia.\\
+Per i consumatori finali, la volatilità dei prezzi può comportare una maggiore incertezza nei costi dell'energia elettrica e una minore capacità di pianificare e gestire il proprio consumo energetico. Prezzi elevati possono incidere pesantemente nel bilancio delle imprese con conseguenti impatti negativi nella crescita finanziaria se le aziende del territorio non sono in grado di pianificare e prepararsi. Anche i consumi della popolazione sono fortemente influenzati dal prezzo dell’energia elettrico e possono alimentare quindi contrazioni negli indici dei consumi della popolazione.\\
+La volatilità rappresenta quindi un rischio che deve essere opportunamente studiato e dove possibile previsto. Da un’accurata gestione del rischio gli operatori del mercato possono individuare opportunità per una crescita. Inoltre, la volatilità dei prezzi può incentivare la flessibilità e l'innovazione nel settore energetico, promuovendo soluzioni come lo stoccaggio dell'energia, la gestione della domanda e la produzione distribuita. Inoltre, diversi operatori forniscono o usufruiscono di sistemi finanziari che limitano l’impatto e il rischio di cambiamenti repentini del prezzo. In queste situazioni la capacità di prevedere, velocemente e a costi contenuti, diventa un fattore determinate e di successo per operare nel settore elettrico. Gli attori che sono in grado di integrare nei propri processi aziendali strumenti di previsione possono ottenere vantaggi competitivi considerevoli.\\
+
+\bibliographystyle{plain} % Stile della bibliografia
+\bibliography{Bibliografia_Tesi} % Nome del file .bib senza estensione
+
+\end{document}
